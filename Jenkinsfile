@@ -15,7 +15,7 @@ pipeline{
             steps{
                 sh 'docker stop my-running-app || true'
                 sh 'docker rm my-running-app || true'
-                sh 'docker run -d -p 8080:80 --name my-running-app my-app-image:latest'
+                sh 'docker run -d -p 8080:80 --name my-running-app my-app-images:latest'
             }
         }
     }
